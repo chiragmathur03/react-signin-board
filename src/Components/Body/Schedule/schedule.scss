@@ -1,0 +1,74 @@
+/* Colors and Styles (Default) */
+:root{
+    --PrimaryColor: hsl(94,59%,35%);
+    --HoverColor: #bdf094;
+    --paleGreen: hsl(96, 75%, 89%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%); 
+    --greyText: rgb(190, 190, 190); 
+    --inputColor: ■hsl(330, 12%, 97%);
+    --itemCardColor: hsl(120,5%,88%);
+    --itemCardHover: hsl(120,27%,87%);
+
+    /* Font and Typography */
+    --biggestFontSize: 2.5rem; 
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem; 
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem; 
+    --smallFontSize: .813rem; 
+    --smallestFontSize: .75rem;
+
+}
+
+.scheduleSection{
+    flex-basis: 50%;
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 30px;
+    background: var(--whiteColor);
+
+    .header{
+        width: 100%;
+        justify-content: space-between;
+       
+        h3{
+            color: var(--blackColor);
+            font-weight: 900;
+        }
+    
+         .btn{
+                border: 1px solid transparent;
+                padding: 0.4rem 1.2rem;
+                border-radius: 50px;
+                color: gray;
+                background: none;
+            }
+            
+            .btn:hover{
+                border: 1px solid var(--greyText);
+            }
+            .icon{
+                padding: 0rem;
+            }
+    }
+
+    .schedulelist{
+        padding: 1rem 0;
+        .firstlist{
+            color: var(--textColor);
+            position: relative;
+            border-left: 5px solid rgba(155,220,125,255);
+            padding-left: 10px;
+        }
+
+        .secondlist{
+            color: var(--textColor);
+            position: relative;
+            border-left: 5px solid rgba(105,114,195,255);
+            padding-left: 10px;
+    }
+    }
+}

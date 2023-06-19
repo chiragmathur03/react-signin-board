@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* Colors and Styles (Default) */
+:root {
+  --darkblack:hsl(0, 0%, 0%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: ■hsl(330, 12%, 97%);
+  --itemCardColor: hsl(120,5%,88%);
+  /* Font and Typography */
+  --mainhead: 2rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.listingSection {
+  padding: 1rem;
+}
+.listingSection .secContainer {
+  width: 100%;
+  margin: 1rem 0;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.listingSection .secContainer .singleItem {
+  position: relative;
+  width: 230px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px;
+}
+.listingSection .secContainer .singleItem img {
+  max-width: 35px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+.listingSection .secContainer .singleItem .icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+.listingSection .secContainer .singleItem .containerData {
+  position: absolute;
+  top: 35px;
+  left: 18px;
+  margin: 15px 0px;
+}
+.listingSection .secContainer .singleItem .containerData h5 {
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+  padding: 0.5rem 0;
+}
+.listingSection .secContainer .singleItem .containerData h2 {
+  font-size: var(--h2FontSize);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.listingSection .secContainer .firstcolor {
+  background: rgb(220, 238, 224);
+}
+.listingSection .secContainer .firstcolor:hover {
+  background: var(--itemCardHover);
+  box-shadow: 0 2px 2px var(--inputColor);
+}
+.listingSection .secContainer .seccolor {
+  background: rgb(244, 236, 221);
+}
+.listingSection .secContainer .seccolor:hover {
+  background: rgb(244, 232, 211);
+  box-shadow: 0 2px 2px var(--inputColor);
+}
+.listingSection .secContainer .thirdcolor {
+  background: rgb(239, 218, 218);
+}
+.listingSection .secContainer .thirdcolor:hover {
+  background: rgb(241, 211, 211);
+  box-shadow: 0 2px 2px var(--inputColor);
+}
+.listingSection .secContainer .fourcolor {
+  background: rgb(223, 225, 239);
+}
+.listingSection .secContainer .fourcolor:hover {
+  background: rgb(212, 214, 238);
+  box-shadow: 0 2px 2px var(--inputColor);
+}/*# sourceMappingURL=listing.css.map */

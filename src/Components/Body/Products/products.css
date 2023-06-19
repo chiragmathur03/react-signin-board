@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* Colors and Styles (Default) */
+:root {
+  --PrimaryColor: hsl(94,59%,35%);
+  --HoverColor: #bdf094;
+  --paleGreen: hsl(96, 75%, 89%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: ■hsl(330, 12%, 97%);
+  --itemCardColor: hsl(120,5%,88%);
+  --itemCardHover: hsl(120,27%,87%);
+  /* Font and Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.productSection {
+  flex-basis: 50%;
+  margin: 1rem 0;
+  padding: 2rem;
+  border-radius: 30px;
+  background: var(--whiteColor);
+}
+.productSection .pieTitle {
+  justify-content: space-between;
+}
+.productSection .pieTitle h3 {
+  color: var(--blackColor);
+  font-weight: 900;
+}
+.productSection .pieTitle .dropdownmenu {
+  padding: 0rem 1rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 50px;
+}
+.productSection .pieTitle .dropdownmenu select {
+  cursor: pointer;
+  border: none;
+  padding: 5px 0px;
+  font-size: var(--h3FontSize);
+  color: gray;
+}
+.productSection .pieTitle .dropdownmenu select:focus {
+  outline: none;
+}
+.productSection .pieTitle .dropdownmenu:hover {
+  border: 1px solid var(--greyText);
+}
+.productSection .pieTitle .chartContainer {
+  padding: 1rem;
+}/*# sourceMappingURL=products.css.map */

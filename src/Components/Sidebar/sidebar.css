@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* Colors and Styles (Default) */
+:root {
+  --darkblack:hsl(0, 0%, 0%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: ■hsl(330, 12%, 97%);
+  /* Font and Typography */
+  --mainhead: 2rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.sideBar {
+  background: var(--darkblack);
+  box-shadow: 1px 0px 4px var(--greyText);
+  width: 18%;
+  gap: 3rem;
+  overflow: auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  position: fixed;
+  flex-wrap: wrap;
+}
+.sideBar .logo {
+  padding: 1.5rem 1.5rem 0;
+  cursor: pointer;
+}
+.sideBar .logo h2 {
+  font-size: var(--mainhead);
+  color: var(--whiteColor);
+}
+.sideBar .menuDiv {
+  margin-bottom: 10rem;
+}
+.sideBar .menuDiv .menuLists .listItem {
+  padding: 0.2rem 1.5rem;
+  width: 100%;
+  position: relative;
+}
+.sideBar .menuDiv .menuLists .listItem .menuLink {
+  color: var(--greyText);
+  font-weight: 500;
+  transition: 0;
+}
+.sideBar .menuDiv .menuLists .listItem .menuLink .icon {
+  margin-right: 0.5rem;
+}
+.sideBar .menuDiv .menuLists .listItem .menuLink .selected {
+  color: var(--whiteColor);
+  font-weight: 900;
+}
+.sideBar .menuDiv .menuLists .listItem:hover .menuLink {
+  color: var(--whiteColor);
+  transition: 0;
+}
+.sideBar .sideBarBottom {
+  width: 100%;
+  padding: 1.5rem;
+  position: relative;
+}
+.sideBar .sideBarBottom li a {
+  color: var(--greyText);
+}
+.sideBar .sideBarBottom li a:hover {
+  color: var(--whiteColor);
+  transition: 0;
+}/*# sourceMappingURL=sidebar.css.map */

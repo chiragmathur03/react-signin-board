@@ -1,0 +1,98 @@
+/* Colors and Styles (Default) */
+/* Colors and Styles (Default) */
+:root{
+    --darkblack:hsl(0, 0%, 0%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%); 
+    --greyText: rgb(190, 190, 190); 
+    --inputColor: ■hsl(330, 12%, 97%);
+
+    /* Font and Typography */
+    --mainhead: 2rem;
+    --h1FontSize: 2rem;
+    --h2FontSize: 1.25rem; 
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem; 
+    --smallFontSize: .813rem; 
+    --smallestFontSize: .75rem;
+
+}
+
+.topSection{
+    .headerSection{
+        justify-content: space-between;
+
+        .title{
+            h2{
+                font-size: var(--h1FontSize);
+                color: var(--darkblack);
+                font-weight: 700;   
+            }
+        }
+
+        .searchBar{
+            padding: 0rem 1rem;
+            background: var(--whiteColor);
+            border-radius: 15px;
+            // gap: 1rem;
+            box-shadow: 0 2px 4px var(--inputColor);
+            align-items: center;
+
+            input{
+                border: none;
+                outline: none;
+                background: none;
+
+            }
+            
+            .searchicon{
+                cursor: pointer;
+                color: var(--textColor);
+                &:hover{
+                    color: var(--greyText);
+                }
+        }
+
+        }
+
+        .adminDiv{
+            gap: 1rem;
+
+            .notiicon{
+                // font-size: var(--biggestFontSize);
+                // background: var(--whiteColor);
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 5px;
+                padding: 5px;
+                box-shadow: 0 2px 4px var(--inputColor);
+                color: var(--textColor);
+                cursor: pointer;
+                &:hover{
+                    color: var(--greyText);
+                }
+            }
+
+            .adminImage{
+                // border: 2px solid var(--whiteColor);
+                // border-radius: 50px;
+                width: 2.5rem;
+                height: 2.5rem;
+                overflow: hidden;
+                box-shadow: 0 2px 4px var(--inputColor);
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50px;
+                }
+
+            }
+
+
+        }
+
+    }
+}

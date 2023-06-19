@@ -1,0 +1,89 @@
+/* Colors and Styles (Default) */
+:root{
+    --darkblack:hsl(0, 0%, 0%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%); 
+    --greyText: rgb(190, 190, 190); 
+    --inputColor: ■hsl(330, 12%, 97%);
+
+    /* Font and Typography */
+    --mainhead: 2rem;
+    --h1FontSize: 2rem;
+    --h2FontSize: 1.25rem; 
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem; 
+    --smallFontSize: .813rem; 
+    --smallestFontSize: .75rem;
+
+}
+
+.sideBar{
+    background: var(--darkblack);
+    box-shadow: 1px 0px 4px var(--greyText);
+    width: 18%;
+    // height: 95%;
+    gap: 3rem;
+    overflow: auto;
+    padding: 1rem;
+    border-radius: 2rem;
+    position: fixed;
+    flex-wrap: wrap;
+
+    .logo{
+        padding: 1.5rem 1.5rem 0;
+        cursor: pointer;
+        h2{
+            font-size: var(--mainhead);
+            color: var(--whiteColor);
+        }
+    }
+
+    .menuDiv{
+        margin-bottom: 10rem;
+        .menuLists{
+            .listItem{
+                padding: .2rem 1.5rem;
+                width: 100%;
+                position: relative;
+
+                .menuLink{
+                    color: var(--greyText);
+                    font-weight: 500;
+                    transition: 0;
+                    .icon{
+                        margin-right: .5rem;
+                    }
+                    
+                    .selected{
+                        color: var(--whiteColor);
+                        font-weight: 900;
+                    }
+                }
+
+                &:hover .menuLink{
+                    color: var(--whiteColor);
+                    transition: 0;
+                }
+
+            }
+        }
+
+    }
+
+    .sideBarBottom {
+        width: 100%;
+        padding: 1.5rem;
+        position: relative;
+
+        li a{
+            color: var(--greyText);
+            &:hover {
+                color: var(--whiteColor);
+                transition: 0;
+            }
+        }
+    }
+}
+
